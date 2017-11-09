@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER jinxinxin@qiniu.com
+MAINTAINER xiongmao@huanlguang.com
 
 #move files
 RUN mkdir -p /root/unzip/
@@ -11,4 +11,5 @@ EXPOSE 9100
 
 #start service
 WORKDIR /root/unzip
+
 ENTRYPOINT ./qufop qufop.conf

@@ -1,7 +1,10 @@
 # 简介
 
 该命令用来将上传到七牛空间中的zip文件进行解压。在某些场景下，用户需要将很多的小文件打包上传以提升上传的效率，上传完之后可以在七牛的空间中解压出一个个文件。该命令实现了zip包的解压功能，并且支持对文件名进行gbk或utf8编码的zip包。也就是说Windows下面使用自带zip工具压缩的文件可以直接上传解压。其他的场景下，可以对文件名进行utf8编码然后打包为zip文件上传，比如移动端（Android或iOS平台）。
-
+# Docker镜像 构建
+项目已构建编译，编译后的可执行文件已放到deploy/unzip/deploy
+构建命令: 进入deploy/unzip 目录 docker build -t qiniu-tools .
+测试命令: curl -X POST http://localhost:9100/handler\?cmd\=qntool-unzip/bucket/eHNiLXNoYXJrc2V2ZW4\=\&url\=http://ongd3pjtz.bkt.clouddn.com/20171107-145526-o0LB0.zip 
 # 命令
 
 该命令名称为`unzip`，对应的ufop实例名称为`ufop_prefix`+`unzip`。
