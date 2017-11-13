@@ -3,8 +3,6 @@
 *.dll
 *.so
 *.dylib
-setup.sh
-/deploy
 # Test binary, build with `go test -c`
 *.test
 
