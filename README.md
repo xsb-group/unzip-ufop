@@ -4,7 +4,7 @@
 # Docker镜像 构建
 项目已构建编译，编译后的可执行文件已放到deploy/unzip/deploy
 构建命令: 进入deploy/unzip 目录 docker build -t qiniu-tools .
-测试命令: curl -X POST http://localhost:9100/handler\?cmd\=qntool-unzip/bucket/eHNiLXNoYXJrc2V2ZW4\=\&url\=http://ongd3pjtz.bkt.clouddn.com/20171107-145526-o0LB0.zip 
+测试命令: curl -X POST http://localhost:9100/handler\?cmd\={命令名称}/bucket/eHNiLXNoYXJrc2V2ZW4\=\&url\=http://ongd3pjtz.bkt.clouddn.com/20171107-145526-o0LB0.zip 
 # 命令
 
 该命令名称为`unzip`，对应的ufop实例名称为`ufop_prefix`+`unzip`。
